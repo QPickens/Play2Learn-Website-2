@@ -1,0 +1,164 @@
+body {
+  background: white;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem .5rem;
+}
+main {
+    background: white;
+    width: 98%;
+    margin: auto;
+}
+
+nav {
+    background: none;
+    margin: 0 -0.5rem;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: right;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: rgb(240, 240,240);
+}
+
+nav a:active {
+    color: #cce;
+}
+
+.box {
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    text-align: left;
+    font-family: lato;
+    font-weight: 300;
+    box-sizing: border-box;
+    width: 440px;
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 40vh;
+}
+
+button {
+    background-color: green;
+    color: white;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+li.contains ul {
+    display: none;
+}
+
+li.contains:hover ul {
+    background: white;
+    display: block;
+    position: absolute;
+}
+
+li.contains li {
+    float: none;
+    font-size: 0.9rem;
+}
+
+.cust-quotes {
+    width: 640px;
+    height:140px;
+    position: relative;
+    overflow: hidden;
+}
+.quotes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: rotateQuotes 30s infinite;
+}
+
+@keyframes rotateQuotes {
+0%, 16.67% {
+    opacity: 1;
+}
+26.67%, 100% {
+    opacity: 0;
+}
+}
+
+.quotes:nth-child(1) {
+    animation-delay: 0s;
+}
+.quotes:nth-child(2) {
+    animation-delay: 10s;
+}
+.quotes:nth-child(3) {
+    animation-delay: 20s;
+}
+
+.cust-quotes blockquote p {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+    color: #353535;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.cust-quotes blockquote cite {
+    text-align: center;
+    font-size: 14px;
+    color: #898989;
+}
+
+.cust-quotes blockquote cite a {
+    font-size:14px;
+    font-weight:normal;
+}
+
+.container {
+    max-width:940px;
+    margin: 15px;
+}
+
+.testimonials {
+    margin:0 auto;
+    width:940px;
+}
+
+
